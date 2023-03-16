@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Index" content="Mehrad's assignment 3">
+    <meta name="author" content="Mehrad Heidari">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <header>
+        <div id="intro">
+            <nav class="links">   
+                <ol>        
+                    <a href="#intro">Application Form</a>
+                    <br>
+                    <br>
+                    <a href="#hobby">HTML5 Video</a>
+                    <br>
+                    <br>
+                    <a href="#html5form">HTML5 Form Elements</a>
+                    <br>
+                    <br>
+                    <a href="#video">Tutorial Video</a>
+                    <br>
+                    <br>
+                    <a href="#map">Image Mapping</a>
+                </ol>                   
+            </nav>
+        </div>
+            <div id="welcome">
+            <h3 class="glow" style="text-align: center;"><strong>Welcome</strong></h3>
+            <p id="webintro">This Page consists of my hobbies, skills in html, and a tutorial video</p>
+            <p id="tutoriallink"><a href="#video">Tutorial Video</a></p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <form method="get">
+            <fieldset>
+                <legend>Application Form</legend>
+                    <div>
+                        <label for="fname">Full name</label>
+                        <input type="text" id="fname" name="fname" size="20" placeholder="John Nash" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="example@gmail.com" size="20">
+                    </div>
+                    <br>
+                        <div>
+                            <label>Gender</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="gender" id="male" value="male">
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" id="female" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                        <br>
+                        <div>
+                            <label>Post applying for</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="trainee">Trainee
+                            <br>
+                            <input type="checkbox" name="softwareengineer">Software Engineer
+                            <br>
+                            <input type="checkbox" name="teamleader">Team Leader
+                            <br>
+                            <input type="checkbox" name="projectmanage">Troject Manager
+                        </div>
+                        <br>
+                        <div>
+                            <label for="invoice">Upload Resume</label>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="file" id="invoice" name="invoice" accept=".doc, .pdf, .docx">
+                        </div>
+                        <br>
+                        <div>
+                            <input type="radio" name="agree" value="agree" required>
+                            <label>I agree with your terms!</label>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="submit" value="submit">
+                            <button type="reset" >reset</button> 
+                        </div>
+            </fieldset>
+        </form>
+
+        <div id="hobby">
+            <div>
+                <video id="vid1" controls>
+                    <source src="assets/videos/pc.mp4">
+                </video>
+                <h1 id="hobbytitle">Computers</h1>
+                <p id="hobbyp">I love everything that has to do with computer hardware.</p>
+            </div>
+
+            <div>
+                <video id="vid2" controls>
+                    <source src="assets/videos/vg.mp4">
+                </video>
+                <h1 id="hobbytitle">Video Games</h1>
+                <p id="hobbyp">I enjoy playing video games it is atleast 50% of my time spent doing during the day.</p>
+            </div>
+
+            <div>
+                <video id="vid3" controls>
+                    <source src="assets/videos/coding.mp4">
+                </video>
+                <h1 id="hobbytitle">Coding</h1>
+                <p id="hobbyp">I enjoy coding and studying programming it's truly a unique experience.</p>
+            </div>
+        </div>
+        <form id="html5form" method="get">
+            <fieldset>
+                <legend>HTML5 Form Elements</legend>
+                    <div>
+                        <label for="title">Title</label>
+                        <br>
+                        <input type="text" id="title" name="title" size="20" placeholder="Mr/Ms" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="fname">Full name</label>
+                        <br>
+                        <input type="text" id="fname" name="fname" size="20" placeholder="John Nash" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="email">Email</label>
+                        <br>
+                        <input type="email" id="email" name="email" placeholder="example@gmail.com" size="20" required>
+                    </div>
+                        <br>
+                        <div>
+                            <label>Phone Number</label>
+                            <br>
+                            <input type="tel" name="phone" id="phonenumber" placeholder="000-000-0000" maxlength="11">
+                        </div>
+                        <br>
+                        <div>
+                            <label>Your Website</label>
+                            <br>
+                            <input type="text" name="website" id="website"> <small>(Optional)</small>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="numberoforder">-Nr. of item to order</label>
+                            <br> 
+                            <input type="number" id="norder" min="1" max="10" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="length">Legnth</label>
+                            <br>
+                            <input type="range" id="length" name="vol" min="1" max="10" required><small>1m (in 10 cm incerments)</small>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="Deliverydate">Delivery date</label>
+                            <br>
+                            <input type="date" id="delivery" name="delivery" min="2020-12-16" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="timeofdelivery" required>Time of delivery</label>
+                            <br>
+                            <input type="time" id="deliverytime" required><small>(In 30 minute incerments)</small>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="color">Color of the item</label>
+                            <br>
+                            <input id="color" type="color" value="#FF0000" required><small>(Default is red)</small>
+                        </div>
+                        <br>                                                        
+                        <div>
+                            <input type="radio" name="agree" value="agree" required>
+                            <label>I agree with your terms!</label>
+                        </div>
+                        <br>
+                        <div>
+                            <input id="submit" type="submit" style="background: url(assets/images/circle.gif); background-size:cover; background-position: center;" alt="submit" value="submit">
+                            <button id="reset" type="reset" style="background: url(assets/images/circle.gif); background-size:cover; background-position: center;">reset</button>
+                        </div>    
+            </fieldset>
+        </form>
+        <div id="video">
+            <h1>Tutorial Video</h1>
+            <iframe width="1700" height="800" src="https://www.youtube.com/embed/PbMhNcVQuxo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+            <div id="map">
+                <h1>Image Mapping</h1>
+                <img src="./assets/images/pc.jpg" alt="Computer" usemap="#pc" id="pc">
+                <map name="pc">
+                    <area target="_blank" alt="AIO" title="AIO" href="https://www.corsair.com/us/en/Categories/Products/Liquid-Cooling/Dual-Radiator-Liquid-Coolers/Hydro-Series%E2%84%A2-H100i-RGB-PLATINUM-SE-240mm-Liquid-CPU-Cooler/p/CW-9060042-WW" coords="641,317,794,765" shape="rect">
+                    <area target="_blank" alt="GPU" title="GPU" href="https://www.gigabyte.com/Graphics-Card/GV-N3080VISION-OC-10GD#kf" coords="98,436,546,535" shape="rect">
+                    <area target="_blank" alt="FAN" title="FAN" href="https://www.corsair.com/us/en/Categories/Products/Fans/Magnetic-Levitation-Fans/LL-White-RGB-Dual-Light-Loop-RGB-LED-PWM-Fan/p/CO-9050091-WW" coords="738,241,75" shape="circle">
+                    <area target="_blank" alt="FAN" title="FAN" href="https://www.corsair.com/us/en/Categories/Products/Fans/Magnetic-Levitation-Fans/LL-White-RGB-Dual-Light-Loop-RGB-LED-PWM-Fan/p/CO-9050091-WW" coords="230,96,656,166" shape="rect">
+                    <area target="_blank" alt="FAN" title="FAN" href="https://www.corsair.com/us/en/Categories/Products/Fans/Magnetic-Levitation-Fans/LL-White-RGB-Dual-Light-Loop-RGB-LED-PWM-Fan/p/CO-9050091-WW" coords="75,120,159,356" shape="rect">
+                    <area target="_blank" alt="PSU" title="PSU" href="https://www.corsair.com/ca/en/Categories/Products/Power-Supply-Units/Power-Supply-Units-Advanced/RMx-Series-White/p/CP-9020187-NA" coords="69,618,535,830" shape="rect">
+                </map>
+            </div>
+    </main>
+    <footer>
+        <script src="https://my.gblearn.com/js/loadscript.js"></script>
+    </footer>
+</body>

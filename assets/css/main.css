@@ -1,0 +1,165 @@
+/* custom fonts*/
+@font-face{
+    src: url(../font/TempestApache-a3OJ.otf);
+    font-family: temp;
+}
+@font-face{
+    src: url(../font2/NorthstarLaserItalic-2x7l.otf);
+    font-family: north;
+}
+@font-face{
+  src: url(../font/TempestApacheSemiItalic-l1OD.otf);
+  font-family: temp2;
+}
+@font-face{
+  src: url(../font2/NorthstarHalftone-YD3a.otf);
+  font-family: stone;
+}
+/* key frames for glows and movement of text */
+@keyframes glow{
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+@keyframes move-right-back {  
+  0% { margin-left:0px;}
+  50% { margin-left:200px; }
+  100% { margin-left:0px; }
+}
+@-webkit-keyframes move-right-back {
+  0% { margin-left:0px;}
+  50% { margin-left:200px; }
+  100% { margin-left:0px; }
+}
+/*header*/
+.glow {
+  font-size: 60px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+#intro{
+  display: flex;
+}
+.links{
+  z-index: 999999999;
+  position: fixed;
+  text-align: left;
+  font-family: temp2;
+  font-size: 160%;
+  border: 3px solid rgb(194, 30, 194);
+  background-color: rgba(0, 0, 0, 0.459);
+  list-style-type: none;
+  display: block;
+}
+#welcome{
+  background-image: url(../images/lounge.gif);
+  background-position-y: -60em;
+}
+#tutoriallink{
+  font-family: north;
+  font-size: 130%;
+  border: 3px solid black;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.459);
+}
+a:hover, a:focus{
+color: rgb(235, 235, 235);
+}
+a{
+  color: rgb(255, 129, 217);
+  text-decoration:none;
+  margin-top: 10em;
+}
+#webintro{
+  color: cyan;
+  font-family:temp;
+  font-size: 150%;
+  text-align: center;
+  margin: -2em auto auto auto;
+}
+
+body{
+  background-image: url(../images/city1.jpg);
+  background-size: 100%;
+}
+
+/*application form*/
+form{
+  color: white;
+  font-family: temp;
+  font-size: 120%;
+  background-image: url(../images/table\ backgrounds.jpg);
+  background-position: center;
+  border: 2px solid black;
+  max-width: 30%;/*500/560*100*/
+  margin: 2em auto auto auto;
+  padding: 2em
+}
+div{
+  text-align: left;
+  padding-left: 1em;
+}
+/*hobbies*/
+
+#vid1, #vid2, #vid3{
+  width: 600px;
+  height: 600px;
+}
+#hobby{
+  background-image: url(../images/lounge.gif);
+  display: grid;
+  border: 1px solid rgb(194, 30, 194);
+  grid-template-columns: 610px 610px 610px;
+}
+#hobbytitle{
+  background-color: rgb(0, 0, 0);
+  font-family: north;
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+#hobbyp{
+  font-size: 25px;
+  text-shadow: 0 0 20px rgb(0, 0, 0), 0 0 30px #00000015, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  height: 260px;
+  color: rgb(255, 255, 255);
+  font-family: temp2;
+  font-size: 2em;
+  text-align: center;
+}
+
+
+/*html5 forum*/
+#reset, #submit{
+  font-family: temp;
+  height: 40px;
+  width: 100px;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+}
+#video{
+  font-family: temp;
+  font-size: 120%;
+  text-align: center;
+  color: white;
+}
+/*image mapping*/
+#pc, #map, #maph{
+  font-family: temp;
+  font-size: 120%;
+  text-align: center;
+  color: white;
+  height: 900px;
+
+}
